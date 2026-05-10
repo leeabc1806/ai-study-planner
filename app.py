@@ -6,14 +6,6 @@ from flask import Flask, request, jsonify, render_template
 import google.generativeai as genai
 from datetime import date
 
-# --- 1. AI 모델 설정 (코드 최상단에서 한 번만 실행) ---
-# ※ 중요: 아래 "YOUR_API_KEY" 부분에 1단계에서 발급받은 실제 API 키를 붙여넣으세요.
-try:
-    genai.configure(api_key="AIzaSyCc7_sm9qFvm1XOBRwPS-WsvSSPCItp9MQ") # 예: genai.configure(api_key="AIzaSy...p9MQ")
-except Exception as e:
-    print(f"API 키 설정 중 오류가 발생했습니다. 키를 확인해주세요: {e}")
-    # 키가 없으면 서버 실행이 의미 없으므로 종료합니다.
-    exit()
 
 
 # JSON 출력을 위한 GenerationConfig 설정
