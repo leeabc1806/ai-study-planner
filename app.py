@@ -7,7 +7,7 @@ import google.generativeai as genai
 from datetime import date
 
 import os
-  api_key = os.getenv("AIzaSyBd9kO0fDo62-IpjVpnMds0IAblTWAEek4")
+  api_key = os.getenv("")
   if not api_key:
       raise RuntimeError("GEMINI_API_KEY 환경변수가 설정되지 않았습니다")
   genai.configure(api_key=api_key)
