@@ -1,0 +1,35 @@
+# 환경 변수 / API 키
+.env
+.env.local
+.env.*.local
+api.txt
+AIzaSyBd9kO0fDo62-IpjVpnMds0IAblTWAEek4*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+
+# Flask
+instance/
+.webassets-cache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 로그
+*.log
+logs/
